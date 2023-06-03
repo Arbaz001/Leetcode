@@ -4,14 +4,13 @@ public:
         vector<int> ans;
         int i;
         for(i=0;i<nums.size();++i){
-         int x=abs(nums[i]);
-         x--;
-         if(nums[x]<0){
-             ans.push_back(x+1);
-         }
-         else{
-             nums[x]=nums[x]*-1;
+            if(nums[i]<=i+1){
+              break;
             }
+          if(nums[i]==nums[i+1]{
+              ans.push_back(nums[i]);
+              i++;
+          }
         }
       return ans;
     }
